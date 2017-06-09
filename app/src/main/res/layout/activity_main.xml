@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.robertherber.marsclock.MainActivity"
+    android:background="@drawable/mars"
+    >
+
+
+    <TextView
+        android:id="@+id/marsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MTC"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintVertical_bias="0.283"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/MSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MSD"
+        android:textColor="#ffffff"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="53dp"
+        app:layout_constraintTop_toBottomOf="@+id/marsTime"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/GMT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GMT"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="43dp"
+        app:layout_constraintTop_toBottomOf="@+id/MSD"
+        app:layout_constraintHorizontal_bias="0.501"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="214dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="8dp"
+        android:popupBackground="#000000"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="26dp"
+        app:layout_constraintTop_toBottomOf="@+id/GMT"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.603" />
+
+    <TextView
+        android:id="@+id/choiceTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choice"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="83dp"
+        app:layout_constraintTop_toBottomOf="@+id/GMT"
+        app:layout_constraintHorizontal_bias="0.501" />
+
+</android.support.constraint.ConstraintLayout>
